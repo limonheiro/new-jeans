@@ -195,8 +195,87 @@ svg {
         transform: scale(1.5, 1) rotate(2deg);
     }
 }
+@media (min-width:100px) and (max-width:510px) {
 
-@media (min-width:100px) and (max-width:684px) {
+    .head{
+        margin-bottom: 5rem;
+    }
+    .top {
+        flex-direction: column;
+    }
+
+    .picture {
+        height: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .obj01 {
+        top: 71px;
+        height: 20px;
+        right: 115px;
+    }
+
+    .obj02 {
+        top: -13px;
+        height: 25px;
+        left: 47px;
+    }
+
+    .obj03 {
+        top: 76px;
+        height: 25px;
+        left: 106px;
+    }
+
+    .obj04 {
+        top: 172px;
+        height: 25px;
+        left: 36px;
+    }
+
+    .obj05 {
+        height: 40px;
+        left: 38px;
+    }
+
+    .obj06 {
+        top: 207px;
+        height: 25px;
+        right: 201px;
+    }
+
+    .obj07 {
+        top: 68px;
+        height: 25px;
+        right: 121px;
+    }
+
+    .obj08 {
+        top: 189px;
+        height: 25px;
+        right: 273px;
+    }
+
+    .obj09 {
+        bottom: 29px;
+        width: 40px;
+        right: 344px;
+    }
+
+    .samsung {
+        width: 20px;
+        left: 53px;
+        top: 78px;
+    }
+
+    .samsung_close {
+        width: 29px;
+        left: 131px;
+        top: 209px;
+    }
+}
+
+@media (min-width:511px) and (max-width:684px) {
 
     .head{
         margin-bottom: 5rem;
