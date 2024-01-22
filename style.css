@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+@font-face {
+    font-family: Ace-sans;
+    src: url('assets/AceSans-Demo.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    margin: 5%;
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 2rem;
+	gap: 0.1rem;
+	margin-top: -6rem;
+}
+
+.title {
+    font-family: Ace-sans;
+    font-size: 4.5rem;
+    font-weight: 600;
+    filter: drop-shadow(1px 5px 5px rgba(0,0,0,0.4));
+}
+
+.subtitle {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-bottom: 2rem;
+}
+
+main {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mask{
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.picture{
+    /* clip-path: path('M 199 7 C 179 -6 143.3 6 129 22 C 112 7 73 -7 52 9 C -9 54 85 176 130 216 C 173 176 253 55 199 7 Z'); */
+    clip-path: url(#profile);
+    height: 200px;
+    aspect-ratio: 1;
+    object-fit: fill;
+}
+
+svg {
+    clip-path: url(#heart);
+}
+
+.objects {
+	position: relative;
+	margin: -68px;
+	bottom: 39px;
+	left: 73px;
+    
+}
+
+.obj01 {
+	position: relative;
+	top: 147px;
+	height: 35px;
+	right: 218px;
+    animation: obj01 5s infinite alternate-reverse;
+}
+
+.obj02 {
+	position: relative;
+	top: -5px;
+	height: 45px;
+	left: 118px;
+}
+
+.obj03 {
+	position: relative;
+	top: 154px;
+	height: 43px;
+	left: 248px;
+}
+
+.obj04 {
+	position: relative;
+	top: 323px;
+	height: 45px;
+	left: 123px;
+    animation: obj04 1s infinite alternate-reverse;
+}
+
+.obj05 {
+	position: relative;
+	bottom: 11px;
+	height: 50px;
+	left: 142px;
+	transform: rotate(80deg);
+}
+
+.obj06 {
+	position: relative;
+	top: 396px;
+	height: 45px;
+	right: 307px;
+}
+
+.obj07 {
+	position: relative;
+	top: 140px;
+	height: 40px;
+	right: 129px;
+	transform: rotate(52deg);
+}
+
+.obj08 {
+	position: relative;
+	top: 361px;
+	height: 40px;
+	right: 418px;
+}
+
+.obj09 {
+	position: relative;
+	bottom: 29px;
+	width: 60px;
+	right: 544px;
+}
+
+.samsung {
+	position: relative;
+	width: 45px;
+	transform: rotate(-20deg);
+	right: -90px;
+	top: 173px;
+}
+
+.samsung_close {
+	position: relative;
+	width: 50px;
+	transform: rotate(15deg);
+	left: 276px;
+	top: 393px;
+}
+
+.bottom-text{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-text-top{
+    font-family: 'Poiret One', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    padding-bottom: 0px;
+}
+
+.bottom-text-bottom{
+    
+    font-family: 'Poiret One', sans-serif;
+    font-size: 80px;
+    font-weight: bolder;
+    padding-top: 0px;
+}
+
+@keyframes obj01 {
+    from {
+        transform: translateY(20px) rotate(100deg);
+    }
+    to {
+        transform: translateY(0) rotate(120deg);
+    }
+}
+
+@keyframes obj04 {
+    from {
+        transform: scale(1, 1.5) rotate(10deg);
+    }
+    to {
+        transform: scale(1.5, 1) rotate(2deg);
+    }
+}
