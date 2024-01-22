@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap'); */
 
 @font-face {
     font-family: Ace-sans;
     src: url('assets/AceSans-Demo.ttf');
+}
+@font-face {
+    font-family: Poiret-One;
+    src: url(assets/PoiretOne-Regular.ttf);
 }
 
 * {
@@ -31,7 +35,7 @@ main {
 }
 
 .subtitle {
-    font-family: 'Poiret One', sans-serif;
+    font-family: Poiret-One;
     font-size: 1rem;
     font-weight: 100;
     padding-bottom: 2rem;
@@ -162,7 +166,7 @@ svg {
 }
 
 .bottom-text-top {
-    font-family: 'Poiret One', sans-serif;
+    font-family: Poiret-One;
     font-size: 24px;
     font-weight: 100;
     padding-bottom: 0px;
@@ -204,9 +208,30 @@ svg {
         flex-direction: column;
     }
 
+    .title {
+        font-size: 3.5rem;
+    }
+
     .picture {
         height: 100px;
         margin-bottom: 1rem;
+    }
+
+    #profile01:after{
+        content: url("assets/01_200.webp");
+    }
+
+    #profile02:after{
+        content: url("assets/02_200.webp");
+    }
+    #profile03:after{
+        content: url("assets/03_200.webp");
+    }
+    #profile04:after{
+        content: url("assets/04_200.webp");
+    }
+    #profile05:after{
+        content: url("assets/05_200.webp");
     }
 
     .obj01 {
